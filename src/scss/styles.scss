@@ -24,13 +24,23 @@ main {
     flex: 1 auto;
     max-width: 800px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    border: 2px dashed black;
+    // border: 2px dashed black;
     border-radius: 10px;
 }
 
-h1 {
+h1,
+h4 {
     color: rgb(255, 183, 3);
+    margin: 5px;
+}
+
+h4 {
+    align-self: flex-start;
+    font-style: italic;
+}
+
+p {
+    align-self: flex-start;
+    margin: 5px;
 }
