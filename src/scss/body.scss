@@ -1,7 +1,7 @@
 
 .top {
-    display: grid;
-    grid-template-columns: 400px auto;
+    display: flex;
+    justify-content: flex-end;
     gap: 50px;
     padding: 25px 0;
 }
@@ -13,7 +13,49 @@
 }
 
 .logo-wrapper > img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     // We should put some animations here for this image (like transform etc.)
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frontend,
+.backend,
+.other {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80%;
+    margin-bottom: 10px;
+    & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        // outline: 2px dashed white;
+        // border-radius: 10px;
+        // background-color: rgb(255, 255, 255);
+        padding: 10px;
+        opacity: .8;
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+            transition: opacity 300ms ease-in-out;
+        }
+    }
+    & > div > img {
+        height: 80px;
+        width: 100px;
+    }
+}
+
+.language {
+    font-weight: bold;
 }
