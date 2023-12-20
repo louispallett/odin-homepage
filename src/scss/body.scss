@@ -1,0 +1,19 @@
+
+.top {
+    display: grid;
+    grid-template-columns: 400px auto;
+    gap: 50px;
+    padding: 25px 0;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-wrapper > img {
+    width: 200px;
+    height: 200px;
+    // We should put some animations here for this image (like transform etc.)
+}

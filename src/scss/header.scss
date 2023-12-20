@@ -1,0 +1,26 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90vw;
+
+    // temp
+    border: 2px dashed blue;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right > a {
+    all: unset;
+    padding: 25px 30px;
+    margin-bottom: 2px;
+
+    &:hover {
+        border-bottom: 2px solid white;
+        margin-bottom: 0;
+        transition: border-bottom 500ms ease-out;
+    }
+}
+
