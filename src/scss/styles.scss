@@ -1,6 +1,7 @@
+@use "body";
+@use "colours";
 @use "header";
 @use "footer";
-@use "body";
 
 html {
     background-color: rgba(17, 24, 39);
@@ -22,7 +23,7 @@ body {
 
 main {
     flex: 1 auto;
-    max-width: 800px;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     // border: 2px dashed black;
@@ -31,17 +32,24 @@ main {
 
 h1,
 h4 {
-    color: rgb(255, 183, 3);
+    color: colours.$dark_header;
     margin: 5px;
+}
+
+h1 {
+    font-size: 2rem;
 }
 
 h4 {
     align-self: flex-start;
     font-style: italic;
     padding-top: 10px;
+    font-size: 1.2rem;
 }
 
 p {
     align-self: flex-start;
     margin: 5px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
 }

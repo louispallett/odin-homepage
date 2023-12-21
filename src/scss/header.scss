@@ -9,15 +9,18 @@ header {
     justify-content: flex-end;
 }
 
-.right > a {
+.right > button {
     all: unset;
     padding: 25px 30px;
     margin-bottom: 2px;
-
+    background-color: rgba(44, 58, 88, 0);
+    transition: background-color 500ms linear;
     &:hover {
-        border-bottom: 2px solid white;
-        margin-bottom: 0;
-        transition: border-bottom 500ms ease-out;
+        // border-bottom: 2px solid white;
+        // margin-bottom: 0;
+        cursor: pointer;
+        background-color: rgba(44, 58, 88, 1);
+        transition: background-color 500ms linear;
     }
 }
 
