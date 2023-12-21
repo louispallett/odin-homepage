@@ -22,8 +22,8 @@ body {
 }
 
 main {
+    max-width: 1250px;
     flex: 1 auto;
-    max-width: 1000px;
     display: flex;
     flex-direction: column;
     // border: 2px dashed black;
