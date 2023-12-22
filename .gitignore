@@ -1,6 +1,4 @@
-dist/index.html
-dist/main.js
-dist/temp.html
+dist/
 node_modules/
 
 package.json
