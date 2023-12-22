@@ -2,9 +2,8 @@
 @use "fonts";
 
 .top {
-    display: flex;
-    justify-content: flex-end;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: .75fr 1fr;
     padding: 100px 0 150px 0;
 }
 
@@ -25,13 +24,19 @@
 
 .logo-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .logo-wrapper > img {
     width: 300px;
     height: 300px;
+}
+
+.bio-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about {
