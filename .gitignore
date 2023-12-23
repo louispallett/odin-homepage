@@ -1,5 +1,6 @@
 dist/
 node_modules/
+src/js/token.js
 
 package.json
 package-lock.json
