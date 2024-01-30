@@ -64,5 +64,6 @@ a {
     &:hover {
         color: colours.$dark_header;
         transition: color 300ms ease-in-out;
+        cursor: pointer;
     }
 }
